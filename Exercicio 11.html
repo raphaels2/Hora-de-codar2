@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    <script>
+let valor1 = parseInt(prompt("Digite o primeiro valor:"));
+let valor2 = parseInt(prompt("Digite o segundo valor:"));
+
+let operacao = parseInt(prompt("Digite a operação desejada:\n1. Adição\n2. Subtração\n3. Divisão\n4. Multiplicação"));
+
+let resultado;
+
+switch (operacao) {
+  case 1:
+    resultado = valor1 + valor2;
+    console.log("O resultado da adição é:", resultado);
+    break;
+  case 2:
+    resultado = valor1 - valor2;
+    console.log("O resultado da subtração é:", resultado);
+    break;
+  case 3:
+    resultado = valor1 / valor2;
+    console.log("O resultado da divisão é:", resultado);
+    break;
+  case 4:
+    resultado = valor1 * valor2;
+    console.log("O resultado da multiplicação é:", resultado);
+    break;
+  default:
+    console.log("Operação inválida");
+}
+
+     </script>
+    
+</body>
+</html>
